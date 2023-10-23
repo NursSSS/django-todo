@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'todo',
     'djoser',
     'corsheaders',
+    'django_celery_beat'
 ]
 
 REST_FRAMEWORK = {

@@ -14,8 +14,8 @@ app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 app.conf.broker_connection_retry_on_startup = True
 
 app.conf.beat_schedule = {
-    'every-10-seconds': {
+    'every-60-seconds': {
         'task': 'todo.tasks.send_email_task',
-        'schedule': 10.0,
+        'schedule': 60.0,
     }
 }
